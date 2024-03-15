@@ -1,0 +1,27 @@
+{
+  "name": "ROSSYCHAT",
+  "description": "A telegram bot",
+  "logo": "https://telegra.ph/file/d95d02975e044cd269793.jpg",
+  "keywords": [
+    "Chatbot",
+    "mongodb",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "repository": "https://github.com/nobodydi/ROSSYCHAT",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "A Bot token from @BotFather",
+      "required": true,
+      "value": ""
+    },
+    "MONGO_URL": {
+      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "required": true,
+      "value": ""
+    }
+  }
+}
